@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #f3f5f9;
+  color: #1f2937;
+}
+
+h1, h2 { margin-top: 0; }
+.muted { color: #6b7280; }
+.container { max-width: 1100px; margin: 24px auto; padding: 0 16px; }
+
+/* Navbar */
+.navbar {
+  display: flex; justify-content: space-between; align-items: center;
+  background: #1e3a8a; color: white; padding: 12px 24px;
+}
+.navbar-links, .navbar-user { display: flex; align-items: center; gap: 16px; }
+.navbar a { color: #cbd5e1; text-decoration: none; padding: 6px 10px; border-radius: 6px; }
+.navbar a.active { background: rgba(255, 255, 255, 0.18); color: white; }
+
+/* Cartes et formulaires */
+.card {
+  background: white; border-radius: 10px; padding: 24px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+label { display: block; margin: 12px 0 4px; font-size: 14px; font-weight: 600; }
+input, select, textarea {
+  width: 100%; padding: 10px; border: 1px solid #d1d5db;
+  border-radius: 6px; font-size: 14px; font-family: inherit;
+}
+button {
+  background: #2563eb; color: white; border: none; padding: 10px 16px;
+  border-radius: 6px; cursor: pointer; font-size: 14px;
+}
+button:hover { background: #1d4ed8; }
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+button.secondary { background: #e5e7eb; color: #1f2937; }
+button.danger { background: #dc2626; }
+.alert { background: #fee2e2; color: #991b1b; padding: 10px; border-radius: 6px; margin: 12px 0; }
+
+/* Page login */
+.login-page { min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+.login-form { width: 100%; max-width: 380px; }
+.login-form button { width: 100%; margin-top: 20px; }
+/* Dashboard */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+.stat-card { display: flex; flex-direction: column; gap: 8px; border-top: 4px solid #2563eb; }
+.stat-value { font-size: 36px; }
+/* Pages liste */
+.page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.page-header h1 { margin: 0; }
+.search-input { margin-bottom: 16px; background: white; }
+.table-card { padding: 0; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 12px 16px; border-bottom: 1px solid #e5e7eb; font-size: 14px; }
+th { background: #f9fafb; color: #6b7280; font-weight: 600; }
+td a { color: #2563eb; text-decoration: none; font-weight: 600; }
+.row-actions { display: flex; gap: 8px; }
+.pagination { display: flex; justify-content: center; align-items: center; gap: 16px; margin-top: 16px; }
+.form-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 20px; }
+/* Détails patient */
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.info-grid div { display: flex; flex-direction: column; gap: 4px; }
+.section-title { margin: 24px 0 12px; }
+
+/* Pastilles de statut */
+.badge { padding: 4px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.badge-pending { background: #fef3c7; color: #92400e; }
+.badge-confirmed { background: #dcfce7; color: #166534; }
+.badge-cancelled { background: #fee2e2; color: #991b1b; }
+/* Filtres */
+.filters { display: flex; gap: 16px; align-items: flex-end; margin-bottom: 16px; flex-wrap: wrap; }
+.filters > div { min-width: 180px; }
+.filters label { margin-top: 0; }
