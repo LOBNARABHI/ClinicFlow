@@ -112,9 +112,4 @@ Les erreurs renvoient les codes HTTP habituels : 400 pour une validation qui éc
 
 Le détail de la conception (diagramme, relations, contraintes) est dans le fichier de conception.
 
-## Ce que je ferais ensuite
 
-- Mettre le token dans un cookie HttpOnly plutôt que dans le `localStorage`.
-- Relire le rôle de l'utilisateur en base à chaque requête : pour l'instant il est lu dans le token, valable un jour.
-- Gérer proprement les fuseaux horaires : « aujourd'hui » dépend du fuseau du serveur PostgreSQL.
-- Ajouter des tests (Jest et Supertest), un Docker Compose et une doc Swagger.
