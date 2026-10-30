@@ -110,7 +110,7 @@ Les erreurs renvoient les codes HTTP habituels : 400 pour une validation qui éc
 - La recherche par nom s'appuie sur un index `pg_trgm`, et il y a des index sur la date, le statut et le patient des rendez-vous.
 - Le backend est découpé en routes, controllers et services. La validation se fait avec Zod et les erreurs passent par un seul middleware.
 
-Le détail de la conception (diagramme, relations, contraintes) est dans le dossier `docs`.
+Le détail de la conception (diagramme, relations, contraintes) est dans le fichier de conception.
 
 ## Ce que je ferais ensuite
 
