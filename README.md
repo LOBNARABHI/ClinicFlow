@@ -1,6 +1,6 @@
 # ClinicFlow
 
-Petite application web pour gérer les patients et les rendez-vous d'une clinique. C'est mon test technique pour Tython : base PostgreSQL, API Express et interface React.
+Petite application web pour gérer les patients et les rendez-vous d'une clinique : base PostgreSQL, API Express et interface React.
 
 Ce que l'appli permet de faire :
 
